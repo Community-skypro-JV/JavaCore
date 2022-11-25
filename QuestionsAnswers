@@ -1,9 +1,41 @@
 1. Какие есть типы данных в Java?
+-Примитивные и объектные(ссылочные).
+
 2. Чем отличается объектные типы от примитивных типов данных?
+-Принципом работы. Примитивные типы данных хранятся только в Stack'e, в то время как объектные типы данных хранят ссылку в Stack'e, 
+которая перенаправляет тебя в Heap, где и хранится основая информация.
+
 3. В чем разница передачи параметров по ссылке и по значению?
+-Скоростью работы? (*)
+
 4. Что такое OutOfMemoryError?
+-Это критическая ошибка переполнения памяти новыми объектами. Вызывается, когда память забивается.
+Подробнее об ошибках: https://javarush.com/groups/posts/1944-iskljuchenija-checked-unchecked-i-svoi-sobstvennihe
+
 5. Что такое стектрейс? Как его получить?
+-Stacktrace - очень полезный инструмент для отладки. Это список вызовов метода, в которых приложение было посередине, когда было выбрано исключение. 
+Это очень полезно, потому что оно не только показывает вам, где произошла ошибка, но также и то, как программа оказалась в этом месте кода.
+Подробнее об StackTrace: https://javarush.com/groups/posts/2972-stack-trace-i-s-chem-ego-edjat
+
 6. Назовите все методы класса Object.
+-public String toString()
+-public native int hashCode()
+-public boolean equals(Object obj)
+-public final native Class getClass()
+-public final native void notify()
+-public final native void notifyAll()
+-public final native void wait(long timeout)
+-public final void wait(long timeout, intnanos)
+-public final void wait()
+-protected void finalize()
+-protected native Object clone()
+Подробнее: https://javarush.com/quests/lectures/questmultithreading.level01.lecture03
+
 7. Что такое конструкторы? Какие типы знаете?
+-Конструкторы - это специальные методы, которые вызывается при создании объекта. Они "конструируют" новый объект определенного класса.
+Конструкторы бывают ЯВНЫМИ и НЕЯВНЫМИ(пустые поля).
+Подробнее: https://vertex-academy.com/tutorials/ru/konstruktory-slovo-v-java/
+
 8. Объекты каких стандартных классов immutable в Java?
+
 9. Дайте краткую характеристику immutable object. Зачем они нужны? Как их создать? Какие преимущества immutable object перед обычными объектами?
